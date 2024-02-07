@@ -1,0 +1,12 @@
+res://entities/player.tscn
+res://maps/tileset.tres
+res://maps/map_entity_prototype.tscn
+res://scripts/player/states/standingScript.gd
+res://scripts/playerScript.gd
+res://scripts/player/states/deadScript.gd
+res://scenes/prototype_environment.tscn
+res://maps/base1/base_1.tscn
+res://entities/bullet.tscn
+res://entities/enemy_phantom.tscn
+res://maps/base1/b_1_layout_2.tscn
+res://scripts/enemy_phantom_script.gd

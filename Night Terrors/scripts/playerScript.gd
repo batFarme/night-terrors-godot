@@ -55,7 +55,7 @@ func _ready():
 	currentWeapon.projectileLife = projectileLife
 	connect("i_just_died", self._on_i_just_died)
 	myAnimator.play("standing")
-	crntState = "standing"
+	crntState = get_node("states/standing")
 
 func _physics_process(delta):
 	#gravity
@@ -64,15 +64,11 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 	else:
 		currentFriction = groundFriction
-	
-	if crntState == "standing":  #eughh. need to change this so that its not constantly asking, just make it so that thhe function called is a variable, chagned ot ht efunction needed (just ask lauren, xey should know)
-		standingState(delta)
-	elif crntState == "dead":
-		deadState(delta)
-	
+	crntState.run(delta)
 	move_and_slide()
 
 #region ========================== STATES =========================================================
+'''
 func standingState(delta):
 	direction = Input.get_axis("dpadLeft", "dpadRight") #no analog stick support with this config!!!
 	if direction != 0:
@@ -107,10 +103,10 @@ func standingState(delta):
 		get_parent().add_child(bulletCreate)  #the getparent part is so that the bullet is instantiated as a child of the scene tree rather than a child of the player scene.
 		#instantiate a projectile entity 
 		pass
-
 func deadState(delta):
 	if Input.is_action_just_pressed("startButton"):
 		get_tree().change_scene_to_file("res://scenes/prototype_environment.tscn")
+'''
 #endregion
 
 func _on_enemy_phantom_who_is_player():
@@ -120,5 +116,5 @@ func _on_enemy_phantom_who_is_player():
 func _on_i_just_died():
 	myAnimator.play("dead")
 	deadStateSprite.visible = true
-	crntState = "dead"
+	crntState = get_node("states/dead")
 	print('player dead ahh hell!')

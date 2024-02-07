@@ -15,17 +15,14 @@ dropDownDistance = 10.0
 projectileSpeed = 500
 projectileLife = 180
 
-[node name="enemy_phantom" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_714jf")]
+[node name="enemy_phantom" parent="." instance=ExtResource("3_714jf")]
 position = Vector2(175, 35)
-player = NodePath("../player")
 
-[node name="enemy_phantom2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_714jf")]
+[node name="enemy_phantom2" parent="." instance=ExtResource("3_714jf")]
 position = Vector2(313, 50)
-player = NodePath("../player")
 
-[node name="enemy_phantom3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_714jf")]
+[node name="enemy_phantom3" parent="." instance=ExtResource("3_714jf")]
 position = Vector2(439, 46)
-player = NodePath("../player")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(276, 104)

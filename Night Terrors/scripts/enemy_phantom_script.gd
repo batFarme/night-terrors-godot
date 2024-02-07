@@ -4,12 +4,13 @@ extends entityBase
 
 signal who_is_player
 signal enemy_just_died
-@export var player: CharacterBody2D   #temp solution for prototype bc NO WAY is this gonna work for the final build... TO-DO-FLAG-7
+var player: CharacterBody2D   #temp solution for prototype bc NO WAY is this gonna work for the final build... TO-DO-FLAG-7
 var targetPos
 
 func _ready():
 	#emit_signal("who_is_player")
 	connect("enemy_just_died", get_parent().get_node('map_entity')._on_enemy_just_died)
+	player = get_parent().get_node("player")
 
 func _physics_process(delta):
 	targetPos = player.position
