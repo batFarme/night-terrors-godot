@@ -7,6 +7,7 @@ extends Node2D
 @export var nextLayout: TileMap
 @export var youAreWinSprite: Sprite2D
 var amountOfEnemies: int
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	amountOfEnemies = 3 #TO BE UPDATED BEYOND PROTOTYPE TO-DO-FLAG-8

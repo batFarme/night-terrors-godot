@@ -4,7 +4,7 @@ extends entityBase
 
 signal who_is_player
 signal enemy_just_died
-var player: CharacterBody2D   #temp solution for prototype bc NO WAY is this gonna work for the final build... TO-DO-FLAG-7
+var player: CharacterBody2D  
 var targetPos
 
 func _ready():

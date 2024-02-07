@@ -45,5 +45,3 @@ youAreWinSprite = NodePath("../youAreWinSprite")
 
 [connection signal="i_am_player" from="player" to="enemy_phantom" method="_on_player_i_am_player"]
 [connection signal="who_is_player" from="enemy_phantom" to="player" method="_on_enemy_phantom_who_is_player"]
-
-[editable path="map_entity"]
