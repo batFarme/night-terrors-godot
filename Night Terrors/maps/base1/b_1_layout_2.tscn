@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://c16hy3jusieaa"]
+
+[ext_resource type="TileSet" uid="uid://50uubrjsdf2v" path="res://maps/tileset.tres" id="1_2vled"]
+[ext_resource type="Script" path="res://scripts/spawnerScripts/b_1_layout_2.gd" id="2_utcec"]
+
+[node name="b1layout2" type="TileMap"]
+texture_filter = 1
+tile_set = ExtResource("1_2vled")
+format = 2
+layer_0/tile_data = PackedInt32Array(524289, 131072, 10, 524290, 131072, 10, 524291, 131072, 10, 327681, 131072, 10, 327682, 131072, 10, 327683, 131072, 10, 524292, 196608, 10, 327684, 196608, 10, 524320, 131072, 10, 524319, 131072, 10, 524318, 131072, 10, 524317, 65536, 10, 327709, 65536, 10, 327710, 131072, 10, 327711, 131072, 10, 327712, 131072, 10, 524298, 65536, 10, 524299, 131072, 10, 524300, 131072, 10, 524301, 131072, 10, 524308, 131072, 10, 524309, 131072, 10, 524310, 131072, 10, 524311, 196608, 10, 262156, 131072, 10, 262157, 131072, 10, 262158, 131072, 10, 262159, 131072, 10, 262160, 131072, 10, 262161, 131072, 10, 262162, 131072, 10, 262163, 131072, 10, 262164, 131072, 10, 262165, 131072, 10, 262155, 65536, 10, 262166, 196608, 10, 524302, 196608, 10, 524307, 65536, 10)
+script = ExtResource("2_utcec")
+
+[node name="enemySpawner" type="Node2D" parent="."]
+position = Vector2(48, 59)
+
+[node name="enemySpawner3" type="Node2D" parent="."]
+position = Vector2(47, 111)
+
+[node name="enemySpawner4" type="Node2D" parent="."]
+position = Vector2(44, 148)
+
+[node name="enemySpawner5" type="Node2D" parent="."]
+position = Vector2(196, 151)
+
+[node name="enemySpawner6" type="Node2D" parent="."]
+position = Vector2(192, 104)
+
+[node name="enemySpawner7" type="Node2D" parent="."]
+position = Vector2(217, 32)
+
+[node name="enemySpawner8" type="Node2D" parent="."]
+position = Vector2(309, 38)
+
+[node name="enemySpawner9" type="Node2D" parent="."]
+position = Vector2(344, 106)
+
+[node name="enemySpawner10" type="Node2D" parent="."]
+position = Vector2(344, 152)
+
+[node name="enemySpawner11" type="Node2D" parent="."]
+position = Vector2(490, 157)
+
+[node name="enemySpawner12" type="Node2D" parent="."]
+position = Vector2(493, 104)
+
+[node name="enemySpawner13" type="Node2D" parent="."]
+position = Vector2(493, 51)
+
+[node name="enemySpawner14" type="Node2D" parent="."]
+position = Vector2(417, 140)
+
+[node name="enemySpawner15" type="Node2D" parent="."]
+position = Vector2(125, 138)
+
+[node name="enemySpawner2" type="Node2D" parent="."]
