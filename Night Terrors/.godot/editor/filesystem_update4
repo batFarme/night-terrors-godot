@@ -1,11 +1,7 @@
-res://scenes/prototype_environment.tscn
-res://maps/tileset.tres
-res://maps/map_entity_prototype.tscn
-res://maps/base1/base_1.tscn
-res://entities/player.tscn
-res://entities/bullet.tscn
-res://entities/enemy_phantom.tscn
 res://maps/base1/b_1_layout_2.tscn
-res://toDo.txt
-res://scripts/enemy_phantom_script.gd
-res://scenes/mapLoader.gd
+res://maps/tileset.tres
+res://scripts/spawnerScripts/b_1_layout_2.gd
+res://scripts/spawnerScripts/enemySpawnerNodeScript.gd
+res://scripts/spawnerScripts/layoutScript.gd
+res://maps/map_entity_prototype.tscn
+res://codeDoc.txt

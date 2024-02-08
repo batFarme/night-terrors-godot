@@ -1,0 +1,16 @@
+MAP SYSTEM
+	map system relies upon a base and layout. the base is the map base (think a gmod map) and then 
+	a layout (think props spawned in that gmod map). generally the map base has solid geometry and 
+	the layout has platforms and enemy spawners, though this isn't really set in stone.
+	
+	map_entity has references to the current and next base, and the current and next layout. these
+	are then loaded into base_theros and base_kheimon, and layout_apollo and layout_selene (which are 
+	named  after the greek gods of summer and winter, and of day and night; the layouts are going to 
+	be switching more often than the bases, so i thought internal names that mirror that would be cute) 
+	when the game scene is first loaded in, map_entity picks two random bases and two random layouts 
+	and assigns them to the current and next base and layout variables. all four are loaded in, but
+	the next base and layout are down below the camera. 
+	
+	masterScript, a script tied to prototype_environment (should probably change the name? but 
+	theres no real point to, so :shrug:) asks map_entity to spawn in a wave, and passes two 
+	arguments: numberToSpawn and enemiesToSpawn.  
