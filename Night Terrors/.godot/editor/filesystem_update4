@@ -7,3 +7,5 @@ res://maps/map_entity_prototype.tscn
 res://codeDoc.txt
 res://scenes/prototype_environment.tscn
 res://scripts/mapMasterScript.gd
+res://scripts/waveMaster.gd
+res://toDo.txt

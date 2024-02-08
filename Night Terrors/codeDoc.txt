@@ -1,3 +1,5 @@
+#for future reference, in case i ever forget how stuff works 
+
 MAP SYSTEM
 	map system relies upon a base and layout. the base is the map base (think a gmod map) and then 
 	a layout (think props spawned in that gmod map). generally the map base has solid geometry and 
@@ -14,5 +16,9 @@ MAP SYSTEM
 	waveMaster, a script tied to prototype_environment (should probably change the name? but 
 	theres no real point to, so :shrug:) asks map_entity to spawn in a wave, and passes two 
 	arguments: numberToSpawn and enemiesToSpawn. numberToSpawn, an integer, is how many enemies
-	should be spawned. enemiesToSpawn is an array with references to different enemy types. these two
-	are tied to wave balancing stuff that are changed in prototype_environment's inspector. 
+	should be spawned. enemiesToSpawn is an array with references to different enemy types. upon
+	recieveing this call, map_entity becomes lazy and just tells currentLayout to do it instead. 
+	begrudgingly, currentLayout then spawns the enemies at random points. these points have already
+	had references to them made, by way of the EnemySpawner2D node children it has. each one has a
+	script tied to it that, upon being loaded into the scene tree, call upon its owner (in this case,
+	their owner should be currentLayout) 

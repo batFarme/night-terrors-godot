@@ -3,7 +3,7 @@ extends TileMap
 
 var enemySpawners: Array
 var mySize
-const phantom = preload("res://entities/enemy_phantom.tscn")
+const phantom = preload("res://entities/enemy_phantom.tscn") #TO-DO-FLAG-10 rewrite this to work with wave system
 
 
 # Called when the node enters the scene tree for the first time.
