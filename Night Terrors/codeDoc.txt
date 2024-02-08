@@ -11,6 +11,8 @@ MAP SYSTEM
 	and assigns them to the current and next base and layout variables. all four are loaded in, but
 	the next base and layout are down below the camera. 
 	
-	masterScript, a script tied to prototype_environment (should probably change the name? but 
+	waveMaster, a script tied to prototype_environment (should probably change the name? but 
 	theres no real point to, so :shrug:) asks map_entity to spawn in a wave, and passes two 
-	arguments: numberToSpawn and enemiesToSpawn.  
+	arguments: numberToSpawn and enemiesToSpawn. numberToSpawn, an integer, is how many enemies
+	should be spawned. enemiesToSpawn is an array with references to different enemy types. these two
+	are tied to wave balancing stuff that are changed in prototype_environment's inspector. 

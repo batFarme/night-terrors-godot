@@ -5,7 +5,7 @@ extends Node2D
 @export var nextBase: TileMap
 @export var currentLayout: TileMap
 @export var nextLayout: TileMap
-@export var youAreWinSprite: Sprite2D
+@export var youAreWinSprite: Sprite2D  #prototype thing. to be removed and replaced with something else.
 var amountOfEnemies: int
 
 # Called when the node enters the scene tree for the first time.

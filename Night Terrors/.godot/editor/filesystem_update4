@@ -5,3 +5,5 @@ res://scripts/spawnerScripts/enemySpawnerNodeScript.gd
 res://scripts/spawnerScripts/layoutScript.gd
 res://maps/map_entity_prototype.tscn
 res://codeDoc.txt
+res://scenes/prototype_environment.tscn
+res://scripts/mapMasterScript.gd
