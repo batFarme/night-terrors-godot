@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://fsc74p7r4d37"]
 
-[ext_resource type="Script" path="res://scripts/mapMasterScript.gd" id="1_1snd0"]
+[ext_resource type="Script" path="res://scripts/mapMasterScript.gd" id="1_r33y5"]
 [ext_resource type="PackedScene" uid="uid://d3vi7im1s47fa" path="res://maps/base1/base_1.tscn" id="2_3ehyt"]
 [ext_resource type="PackedScene" uid="uid://c16hy3jusieaa" path="res://maps/base1/b_1_layout_2.tscn" id="3_2ioqa"]
 [ext_resource type="PackedScene" uid="uid://cw18k0a65ngpa" path="res://maps/base1/b_1_layout_1.tscn" id="4_lojds"]
@@ -30,7 +30,7 @@ _data = {
 }
 
 [node name="map_entity" type="Node2D"]
-script = ExtResource("1_1snd0")
+script = ExtResource("1_r33y5")
 
 [node name="base_theros" type="Node2D" parent="."]
 

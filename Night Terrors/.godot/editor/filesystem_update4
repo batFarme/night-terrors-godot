@@ -9,3 +9,7 @@ res://scenes/prototype_environment.tscn
 res://scripts/mapMasterScript.gd
 res://scripts/waveMaster.gd
 res://toDo.txt
+res://maps/base1/base_1.tscn
+res://entities/player.tscn
+res://entities/bullet.tscn
+res://entities/enemy_phantom.tscn

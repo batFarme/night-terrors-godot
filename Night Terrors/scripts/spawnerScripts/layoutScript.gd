@@ -15,4 +15,4 @@ func addSpawnerReference(theSpawnerInQuestion):
 
 func spawnMonsters(numberToSpawn, whoToSpawn: Array):
 	for i in numberToSpawn:
-		
+		pass
