@@ -11,10 +11,9 @@ var amountOfEnemies: int
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	amountOfEnemies = 3 #TO BE UPDATED BEYOND PROTOTYPE TO-DO-FLAG-8
+	print("mapMasterScritp is here")
 	pass # Replace with function body.
 
-func countEnemySpawners():
-	pass
 func _physics_process(delta):
 	if youAreWinSprite.visible:   #to be removed outside prototype
 		if Input.is_action_just_pressed("startButton"):

@@ -6,7 +6,8 @@ extends entityBase
 const bullet = preload("res://entities/bullet.tscn")
 @export var gunSprite: Node2D
 @export var myAnimator: AnimationPlayer
-@export var deadStateSprite: Sprite2D
+@export var deadStateSprite: Sprite2D #to be removed in final product, was just part of prototype funcionality
+@export var myTimer: Timer
 #endregion 
 
 #region ========================== HANDLING =======================================================
@@ -118,3 +119,7 @@ func _on_i_just_died():
 	deadStateSprite.visible = true
 	crntState = get_node("states/dead")
 	print('player dead ahh hell!')
+
+
+func _on_timer_timeout():
+	pass # Replace with function body.

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ce878j00f0p2h"]
 
-[ext_resource type="Script" path="res://scripts/waveMaster.gd" id="1_u37wg"]
+[ext_resource type="Script" path="res://scripts/waveMasterScript.gd" id="1_u37wg"]
 [ext_resource type="PackedScene" uid="uid://qjv4xupnmlj4" path="res://entities/player.tscn" id="1_whak0"]
 [ext_resource type="PackedScene" uid="uid://c53jkv7ehfngk" path="res://entities/enemy_phantom.tscn" id="3_714jf"]
 [ext_resource type="PackedScene" uid="uid://fsc74p7r4d37" path="res://maps/map_entity_prototype.tscn" id="5_iopuk"]

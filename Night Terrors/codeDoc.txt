@@ -1,6 +1,11 @@
 #for future reference, in case i ever forget how stuff works 
 
 MAP SYSTEM
+	the map system heirarchy goes:
+		- waveMaster
+		- mapMasterScript
+		- layoutScript
+		- enemySpawner
 	map system relies upon a base and layout. the base is the map base (think a gmod map) and then 
 	a layout (think props spawned in that gmod map). generally the map base has solid geometry and 
 	the layout has platforms and enemy spawners, though this isn't really set in stone.
