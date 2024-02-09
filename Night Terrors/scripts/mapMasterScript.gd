@@ -11,6 +11,7 @@ var amountOfEnemies: int
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	amountOfEnemies = 3 #TO BE UPDATED BEYOND PROTOTYPE TO-DO-FLAG-8
+	currentBase = get_node("base_theros").get_child(0)
 	print("mapMasterScritp is here")
 	pass # Replace with function body.
 

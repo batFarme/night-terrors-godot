@@ -29,7 +29,7 @@ var lastDirection = 1 #its only set initially so that if the player fires wihtou
 var currentFriction
 var gunBarrelPos
 var dropDownCount = -1
-var crntState
+var crntState	
 
 class Weapon:
 	var projectileSpeed: int    #the way this is set up, weapon scenes that are dropped on the floor contain within them a new instance of this class (gonna proly have to rewrite this so that this class is in a global logic handler TO-DO-FLAG-4), and upon colission the myWeapon variable is updated to match the collided weapon

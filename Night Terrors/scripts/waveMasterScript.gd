@@ -24,8 +24,12 @@ func _ready():
 	print(str(waveThresholds[2][1]))
 	pass
 	#just to test how multi dimensional arrays work...
-func newWave(waveNo):
-	var myWaveThresholds = waveThresholds[waveNo]
-	
-	
+
+func waveSpawn(waveNo):
+	var myWaveThresholds = waveThresholds[waveNo]	
 	pass
+
+func _physics_process(delta):
+	if Input.is_action_pressed("debugHold"):
+		if Input.is_action_just_pressed("1"):
+			waveSpawn(1)

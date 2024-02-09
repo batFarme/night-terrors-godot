@@ -1,8 +1,8 @@
+EnemySpawner2D
+TileMap
 Timer
 Node2D
-EnemySpawner2D
 AnimationPlayer
-TileMap
 Sprite2D
 Hitbox2D
 CollisionShape2D
