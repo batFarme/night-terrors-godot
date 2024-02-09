@@ -16,8 +16,8 @@ func takeHit(knockback: int, attackStun: int, attackerPos):    #the entity's hit
 	else:
 		knockbackDirection = 1
 	if iTakeKnockback:
-		velocity.x += knockback * knockbackDirection   #probably a more elegant way to do this, but oh well. 
-		velocity.y -= knockback #this is a hardcoded 90 degree knockback angle, probably to be tweaked later
+		velocity.x = knockback * knockbackDirection   #probably a more elegant way to do this, but oh well. 
+		velocity.y = -knockback #this is a hardcoded 90 degree knockback angle, probably to be tweaked later
 	if attackStun != 0: #create stun state; probably only reeeeeaaally applies to player. TO-DO-FLAG-4
 		pass
 	if hp <= 0:

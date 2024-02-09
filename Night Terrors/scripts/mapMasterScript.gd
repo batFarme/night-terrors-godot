@@ -8,6 +8,9 @@ extends Node2D
 @export var youAreWinSprite: Sprite2D  #prototype thing. to be removed and replaced with something else.
 var amountOfEnemies: int
 
+@export var currentBaseHolder: Node2D
+@export var currentLayoutHolder: Node2D
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	amountOfEnemies = 3 #TO BE UPDATED BEYOND PROTOTYPE TO-DO-FLAG-8

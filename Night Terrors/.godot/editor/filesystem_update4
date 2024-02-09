@@ -9,3 +9,5 @@ res://maps/base1/b_1_layout_2.tscn
 res://scripts/mapMasterScript.gd
 res://maps/base1/b_1_layout_1.tscn
 res://scripts/waveMasterScript.gd
+res://scripts/spawnerScripts/enemySpawnerNodeScript.gd
+res://scripts/entityBase.gd
