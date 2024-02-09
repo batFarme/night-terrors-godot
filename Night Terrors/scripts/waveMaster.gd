@@ -2,19 +2,28 @@ extends Node2D
 const phantom = preload("res://entities/enemy_phantom.tscn")
 const leaper = "to be added"
 const caster = "to be added"
-
+var crntWave: int = 1
 @export var currentWave: int
-@export var waveThresholds: Array = [ #if ive got time, figure out how to have this stuff editable in the inspector
-	#wave no., enemies to be spawned, how many per wave
-	[1, [phantom], range(1)],
-	[2, [phantom], range(2, 4)], #talk to jaden, figure out how wave progression shoudl be structured
-	[4, [leaper], range(1)],
-	[5, [phantom, leaper], range(3, 6)]
+var waveThresholds: Array = [ #if ive got time, figure out how to have this stuff editable in the inspector
+	#wave no., enemies to be spawned, how many per wave, map size
+	[1, [phantom], range(1), 1],
+	[2, [phantom], range(2, 4), 1], #talk to jaden, figure out how wave progression shoudl be structured
+	[4, [leaper], range(1), 2],
+	[5, [phantom, leaper], range(3, 6), 2],
+	[8, [caster], range(1), 3],
+	[9, [phantom, leaper, caster], range(6, 20), 3]
+]
+var specialWaves: Array = [
+	#enemies to be spawned, how many of each, map size
+	[[leaper, caster], [3, 2], 3] 
 ]
 
 func _ready():
 	print(str(waveThresholds[2][1]))
 	pass
 	#just to test how multi dimensional arrays work...
-func newWave():
+func newWave(waveNo):
+	var myWaveThresholds = waveThresholds[waveNo]
+	
+	
 	pass
