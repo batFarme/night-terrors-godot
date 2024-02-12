@@ -26,7 +26,7 @@ func _ready():
 	#just to test how multi dimensional arrays work...
 
 func waveSpawn(waveNo):
-	var myWaveThresholds = waveThresholds[waveNo]	
+	var myWaveThresholds = waveThresholds[waveNo]
 	pass
 
 func _physics_process(delta):
