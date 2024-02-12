@@ -1,17 +1,5 @@
 extends Node2D
 #also doubles as enemy spawner
-class Base:
-	var number: int
-	var me: TileMap
-	var layouts: Array
-	func _init(numberSet: int, meSet: TileMap, layoutsSet: Array):
-		number = numberSet
-		me = meSet
-		layouts = layoutsSet
-
-class Layout:
-	var number: int
-	var me: TileMap
 
 @export var currentBase: TileMap
 @export var nextBase: TileMap
@@ -19,6 +7,8 @@ class Layout:
 @export var nextLayout: TileMap
 @export var youAreWinSprite: Sprite2D  #prototype thing. to be removed and replaced with something else.
 var amountOfEnemies: int
+
+@export var mapList: Node
 
 @export var currentBaseHolder: Node2D
 @export var currentLayoutHolder: Node2D
