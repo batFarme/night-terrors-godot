@@ -191,6 +191,9 @@ groundFriction = 10.0
 airFriction = 5.0
 HP = 2
 dropDownWindow = 10
+dropDownDistance = 10.0
+projectileSpeed = 500
+projectileLife = 180
 hp = 2
 iTakeKnockback = true
 
