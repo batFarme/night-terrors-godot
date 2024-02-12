@@ -13,9 +13,6 @@ script = ExtResource("1_u37wg")
 [node name="player" parent="." node_paths=PackedStringArray("deadStateSprite") instance=ExtResource("1_whak0")]
 position = Vector2(109, 126)
 deadStateSprite = NodePath("../youAreDeadSprite")
-dropDownDistance = 10.0
-projectileSpeed = 500
-projectileLife = 180
 
 [node name="enemy_phantom" parent="." instance=ExtResource("3_714jf")]
 position = Vector2(175, 35)

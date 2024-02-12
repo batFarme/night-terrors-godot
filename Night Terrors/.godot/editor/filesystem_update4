@@ -1,5 +1,2 @@
-res://maps/map_entity_prototype.tscn
-res://maps/tileset.tres
-res://maps/map_editor_environemnt.tscn
 res://scenes/prototype_environment.tscn
-res://entities/player.tscn
+res://maps/tileset.tres
