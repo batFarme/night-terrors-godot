@@ -1,2 +1,9 @@
 res://scenes/prototype_environment.tscn
 res://maps/tileset.tres
+res://scripts/waveMasterScript.gd
+res://scripts/spawnerScripts/enemySpawnerNodeScript.gd
+res://scripts/spawnerScripts/layoutScript.gd
+res://maps/map_entity_prototype.tscn
+res://maps/map_editor_environemnt.tscn
+res://entities/player.tscn
+res://maps/base1/b_1_layout_2.tscn

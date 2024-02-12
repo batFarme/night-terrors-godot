@@ -5,6 +5,8 @@ const caster = "to be added"
 var crntWave: int = 1
 @export var currentWave: int
 
+@onready var map_entity = get_node("map_entity")
+
 var waveThresholds: Array = [ #if ive got time, figure out how to have this stuff editable in the inspector
 	#wave no., enemies to be spawned, how many per wave, map size
 	[1, [phantom], range(1), 1],

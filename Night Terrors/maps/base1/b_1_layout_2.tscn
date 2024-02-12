@@ -42,7 +42,7 @@ scale = Vector2(82.2523, -1.05023)
 script = ExtResource("3_78kv8")
 
 [node name="EnemySpawner2D7" type="Node2D" parent="."]
-position = Vector2(326, 35)
+position = Vector2(330, 44)
 scale = Vector2(82.2523, -1.05023)
 script = ExtResource("3_78kv8")
 

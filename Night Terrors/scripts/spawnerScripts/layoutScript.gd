@@ -11,7 +11,7 @@ func _ready():
 	print("layout script is here!")
 	pass # Replace with function body.
 
-func addSpawnerReference(theSpawnerInQuestion):
+func addSpawnerReference(theSpawnerInQuestion: Vector2):
 	enemySpawners.append(theSpawnerInQuestion) #probably dont need the whole ahh custom method??? coulda just said owner.enemySpawners.append(self) in the enemySpawner2Ds... oh well, might come in handy later
 
 func announceMyChildName(child):
