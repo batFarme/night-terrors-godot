@@ -17,7 +17,7 @@ var waveThresholds: Array = [ #if ive got time, figure out how to have this stuf
 	[9, [phantom, leaper, caster], range(6, 20), 3]
 ]
 
-var specialWaves: Array = [
+var specialWaves: Array = [        #sort of "special event" waves; think the dogs in bo1 zombies, or special matches in tekken's treasure battle
 	#enemies to be spawned, how many of each, map size
 	[[leaper, caster], [3, 2], 3] 
 ]

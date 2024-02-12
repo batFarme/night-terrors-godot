@@ -1,5 +1,17 @@
 extends Node2D
 #also doubles as enemy spawner
+class Base:
+	var number: int
+	var me: TileMap
+	var layouts: Array
+	func _init(numberSet: int, meSet: TileMap, layoutsSet: Array):
+		number = numberSet
+		me = meSet
+		layouts = layoutsSet
+
+class Layout:
+	var number: int
+	var me: TileMap
 
 @export var currentBase: TileMap
 @export var nextBase: TileMap
@@ -14,7 +26,7 @@ var amountOfEnemies: int
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	amountOfEnemies = 3 #TO BE UPDATED BEYOND PROTOTYPE TO-DO-FLAG-8
-	currentBase = get_node("base_theros").get_child(0)
+	currentBase = get_node("base_theros").get_child(0) #makes base theros' child the current base.
 	print("mapMasterScritp is here")
 	pass # Replace with function body.
 

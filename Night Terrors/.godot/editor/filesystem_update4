@@ -7,3 +7,4 @@ res://maps/map_entity_prototype.tscn
 res://maps/map_editor_environemnt.tscn
 res://entities/player.tscn
 res://maps/base1/b_1_layout_2.tscn
+res://scripts/mapMasterScript.gd
